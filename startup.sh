@@ -52,5 +52,8 @@ echo "        option product_class ${device_option_product_class-$def_device_opt
 echo "        option serial_number ${device_option_serial_number-$def_device_option_serial_number}" >> /etc/config/easycwmp
 echo "        option hardware_version ${device_option_hardware_version-$def_device_option_hardware_version}" >> /etc/config/easycwmp
 echo "        option software_version ${device_option_software_version-$def_device_option_software_version}" >> /etc/config/easycwmp
+
+cat /etc/config/easycwmp
+
 /usr/sbin/ubusd -s /var/run/ubus.sock &
 /usr/sbin/easycwmpd -f -b
