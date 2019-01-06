@@ -11,7 +11,7 @@ FROM ubuntu:16.04
 RUN apt-get update && \
 mkdir -p /opt/dev && \
 mkdir -p /opt/git && \
-apt-get -y install git && \
+apt-get -y install git iputils-ping traceroute && \
 git clone git://github.com/json-c/json-c.git /opt/git/json-c && \
 cd /opt/git/json-c/ && \
 apt-get install -y dh-autoreconf && \
