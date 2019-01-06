@@ -90,28 +90,7 @@ mkdir -p /lib/functions && \
 wget http://pastebin.lukaperkov.net/openwrt/20121219_lib_functions.sh -O /lib/functions.sh  && \
 wget http://pastebin.lukaperkov.net/openwrt/20121219_lib_config_uci.sh -O /lib/config/uci.sh && \
 wget http://pastebin.lukaperkov.net/openwrt/20121219_lib_functions_network.sh -O /lib/functions/network.sh && \
-export PATH=$PATH:/usr/sbin:/sbin \
-    local_option_interface=eth0 \
-    local_option_port=7547 \
-    local_option_ubus_socket=/var/run/ubus.sock \
-    local_option_date_format=%FT%T%z \
-    local_option_username=admin \
-    local_option_password=admin \
-    local_option_provisioning_code='' \
-    local_option_logging_level='3' \
-    acs_option_url=http://5.5.5.12/acs \
-    acs_option_username=easycwmp \
-    acs_option_password=easycwmp \
-    acs_option_parameter_key='' \
-    acs_option_periodic_enable='1' \
-    acs_option_periodic_interval='100' \
-    acs_option_periodic_time='0001-01-01T00:00:00Z' \
-    device_option_manufacturer=easycwmp \
-    device_option_oui=FFFFFF \
-    device_option_product_class=easycwmp \
-    device_option_serial_number=FFFFFF123456 \
-    device_option_hardware_version=example_hw_version \
-    device_option_software_version=example_sw_version && \
+export PATH=$PATH:/usr/sbin:/sbin && \
 ln -sf bash /bin/sh
 ADD startup.sh /
 
