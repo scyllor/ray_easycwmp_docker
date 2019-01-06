@@ -55,5 +55,7 @@ echo "        option software_version ${device_option_software_version-$def_devi
 
 cat /etc/config/easycwmp
 
+bash /usr/sbin/easycwmp -–json get value Device
+
 /usr/sbin/ubusd -s /var/run/ubus.sock &
 /usr/sbin/easycwmpd -f -b
