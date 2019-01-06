@@ -39,7 +39,7 @@ echo "        option logging_level '${local_logging_level-$def_local_logging_lev
 echo "config acs" >> /etc/config/easycwmp
 echo "        option url ${acs_option_url-$def_acs_option_url}" >> /etc/config/easycwmp
 echo "        option username ${acs_option_username-$def_acs_option_username}" >> /etc/config/easycwmp
-echo "        option password ${acs_option_passsword-$def_acs_option_passsword}" >> /etc/config/easycwmp
+echo "        option password ${acs_option_passsword-$def_acs_option_password}" >> /etc/config/easycwmp
 echo "        option parameter_key '${acs_option_parameter_key-$def_acs_option_parameter_key}'" >> /etc/config/easycwmp
 echo "        option periodic_enable '${acs_option_periodic_enable-$def_acs_option_periodic_enable}'" >> /etc/config/easycwmp
 echo "        option periodic_interval '${acs_option_periodic_interval-$def_acs_option_periodic_interval}'" >> /etc/config/easycwmp
